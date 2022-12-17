@@ -1,3 +1,16 @@
-<footer class="footer px-10 py-2 border-top-3 border-t border-indigo-200">
-    &copy; CodeSilica
+<footer class="flex flex-row footer py-5 border-top-3 border-t border-indigo-200">
+    <div id="copyright" class="basis-full md:basis-1/4">
+        &copy; <span id="copyright-year">2022</span> CodeSilica
+    </div>
+    <div id="credits" class="mt-5 md:mt-0 basis-full md:basis-1/4">
+        <span>Credits:</span>
+        <ul class="text-gray-500">
+            <li>Banner by <a class="hover:underline hover:text-gray-900 decoration-orange-300 underline-offset-4 mr-10" target="_blank" href="https://www.freepik.com/free-vector/colourful-illustration-programmer-working_5483080.htm#query=computer%20programming&position=7&from_view=search&track=sph">Freepik</a></li>
+            <li>Background by <a class="hover:underline hover:text-gray-900 decoration-orange-300 underline-offset-4 mr-10" target="_blank"  href="https://www.freepik.com/free-vector/digital-white-background-with-binary-code-numbers_8289992.htm#query=binary%20stream&position=1&from_view=search&track=sph">starline</a></li>
+        </ul>
+    </div>
 </footer>
+
+<script type="text/javascript">
+    document.getElementById("copyright-year").innerText = `${new Date().getFullYear()}`;
+</script>
