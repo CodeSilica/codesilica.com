@@ -5,66 +5,26 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
     <link rel="icon" type="image/x-icon" href="assets/images/logo.png">
-    <script src="https://cdn.tailwindcss.com"></script>
     <title>CodeSilica</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://www.w3schools.com/lib/w3data.js"></script>
+
 </head>
+
 <body class="bg-gray-100">
 
-<nav class="px-3 pt-1 pb-2 border-1 border-b border-indigo-200">
-    <img class="w-48" src="assets/images/codesilica.png" alt="CodeSilica">
-</nav>
+    <section w3-include-html="navbar.html"></section>
+    <div w3-include-html="banner.html"></div>
+    <div w3-include-html="services.html"></div>
+    <div w3-include-html="expertise.html"></div>
+    <div w3-include-html="care_about.html"></div>
+    <div w3-include-html="footer.html"></div>
 
-<section class="flex flex-row bg-cover bg-center"
-     style="background-image: url('assets/images/background.jpg');
-     height: 45rem">
-
-    <div class="basis-1/2"></div>
-    <div class="basis-1/2 bg-gray-100 rounded-bl-full opacity-90 p-5">
-        <div class="pl-36 mt-48">
-            <span class="text-xl text-fuchsia-400">Do you have a dream?</span><br>
-            <span class="text-4xl text-indigo-500">We can make it come true.</span>
-        </div>
-    </div>
-</section>
-
-<section class="flex flex-row my-5 px-10">
-    <div class="basis-full">
-        <h2 class="text-4xl text-gray-700">What we offer?</h2>
-        <ul>
-            <li>Web Development Consultancy</li>
-            <li>Web Application Development</li>
-            <li>API Design and Development</li>
-            <li>Database Design</li>
-        </ul>
-    </div>
-</section>
-
-<section class="flex flex-row my-5 px-10">
-    <div class="basis-full">
-        <h2 class="text-4xl text-gray-700">Our Expertise</h2>
-        <ul>
-            <li>Laravel</li>
-            <li>VueJS</li>
-            <li>MySQL</li>
-            <li>AWS</li>
-        </ul>
-    </div>
-</section>
-
-<section class="flex flex-row my-5 px-10">
-    <div class="basis-full">
-        <h2 class="text-4xl text-gray-700">We care about</h2>
-        <ul>
-            <li>Business growth</li>
-            <li>Scalability</li>
-            <li>Maintainability</li>
-            <li>Security</li>
-        </ul>
-    </div>
-</section>
-<footer class="footer px-10 py-2 border-top-3 border-t border-indigo-200">
-    &copy; CodeSilica
-</footer>
+    <script>
+        w3IncludeHTML();
+    </script>
 </body>
 </html>
