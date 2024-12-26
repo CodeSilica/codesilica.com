@@ -1,0 +1,12 @@
+version: "3.8"
+
+services:
+    web:
+        image: nginx:alpine
+        container_name: codesilica
+        ports:
+            - "91:80" # Map port 80 in the container to port 91 on your host
+        volumes:
+            - .:/usr/share/nginx/html:ro # Made read only(ro) from the container
+            - ./nginx/default.conf:/etc/nginx/conf.d/default.conf:ro
+        restart: unless-stopped
