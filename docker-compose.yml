@@ -1,5 +1,6 @@
 services:
     web:
+        image: codesilica.com
         build: .
         container_name: codesilica
         ports:
