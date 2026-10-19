@@ -1,0 +1,10 @@
+.git
+.github
+.gitignore
+.dockerignore
+.idea
+**/.DS_Store
+Dockerfile
+docker-compose*.yml
+Readme.md
+CNAME
